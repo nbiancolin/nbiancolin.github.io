@@ -1,6 +1,7 @@
 # nbiancolin.github.io
 
-Yeah theres stuff here ig.
+Welcome to my (very unfinished) portfolio!
 
-[Zone Wars](http://nbiancolin.github.io/ZoneWars.html)
+[GalazyJar](./GalaxyJar/)
+[Zone Wars](./ZoneWars.html)
 
