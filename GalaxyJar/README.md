@@ -9,6 +9,13 @@ The perfect gift you could give to your special someone. A tech-y twist on a cut
 
 When you tap the lid of the mason jar, it lights up LEDs in the interior of the LED, as well as the lights on any other Galaxy Jar connected to the internet.
 
+<video width="320" height="240" controls>
+  <source src="../img/video1.mp4" type="video/mp4">
+</video>
+<video width="320" height="240" controls>
+  <source src="../img/video2.mp4" type="video/mp4">
+</video>
+
 ![](../img/video1.mp4)
 ![](../img/video2.mp4)
 
