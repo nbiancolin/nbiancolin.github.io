@@ -11,7 +11,7 @@ int main(){
     cout << "Welcome to the magic calculator!" << endl;
     while(true){
         cout << "Please input your selection: " << endl;
-
+        cout << "> ";
         string input;
         getline(cin, input);
         lineStream << input;
