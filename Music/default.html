@@ -2,45 +2,120 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>RICOLA MUSIC</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jazz Pianist - Your Name</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
 
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 2em 0;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        section:hover {
+            transform: scale(1.02);
+        }
+
+        h2 {
+            color: #3498db;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .hero img {
+            border-radius: 10px;
+            width: 100%;
+            max-width: 600px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .quote {
+            font-style: italic;
+            color: #888;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            color: #e74c3c;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #c0392b;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: #2c3e50;
+            color: #fff;
+        }
+    </style>
 </head>
-
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>Welcome to Ricola Music</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="main-content">
-            <h2>Featured Artists</h2>
-            <div class="artist">
-                <img src="img/artist1.jpg" alt="Artist 1">
-                <h3>Artist 1</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, elit vel bibendum bibendum, nunc sapien bibendum sapien, vel bibendum sapien sapien vel sapien.</p>
-            </div>
-            <div class="artist">
-                <img src="img/artist2.jpg" alt="Artist 2">
-                <h3>Artist 2</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, elit vel bibendum bibendum, nunc sapien bibendum sapien, vel bibendum sapien sapien vel sapien.</p>
-            </div>
-            <div class="artist">
-                <img src="img/artist3.jpg" alt="Artist 3">
-                <h3>Artist 3</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, elit vel bibendum bibendum, nunc sapien bibendum sapien, vel bibendum sapien sapien vel sapien.</p>
-            </div>
-        </div>
-        <div class="footer">
-            <p>&copy; 2021 Ricola Music</p>
-        </div>
-    </div>
-</body>
 
+    <header>
+        <h1>Jazz Pianist - Your Name</h1>
+        <p>Feel the Rhythm, Live the Jazz</p>
+    </header>
+
+    <section class="hero">
+        <img src="piano-image.jpg" alt="Jazz Pianist">
+    </section>
+
+    <section>
+        <h2>About Me</h2>
+        <p>
+            As a passionate jazz pianist, I strive to bring the magic of music to life through my fingertips. With a deep love for the art of improvisation and a commitment to the rich history of jazz, I aim to create soulful and memorable musical experiences.
+        </p>
+        <p class="quote">"Jazz is not just music, it's a way of life."</p>
+    </section>
+
+    <section>
+        <h2>Follow Me</h2>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/yourname" target="_blank">Facebook</a>
+            <a href="https://www.twitter.com/yourname" target="_blank">Twitter</a>
+            <a href="https://www.instagram.com/yourname" target="_blank">Instagram</a>
+            <!-- Add more social icons as needed -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Your Name. All rights reserved.</p>
+    </footer>
+
+</body>
 </html>

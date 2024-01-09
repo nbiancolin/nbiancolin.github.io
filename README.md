@@ -6,13 +6,18 @@ Hi! I'm Nicholas Biancolin, studying Computer Engineering at the University of T
 ## Projects
 - [**Galaxy Jar**](./GalaxyJar/)
   Developed and built capacitive touch sensors connected to Arduino Nano ESP8266 boards using Wi-Fi to connect to a web server, allowing the Arduinos to communicate with each other.
-  
+- [**Web Scavenger Hunt**](./Christmas2024)
+  Built a polar coordinates sketching function that draws a percentage of a certain graph (as described by a cookie stored in the user's browser). This cookie is updated when tasks are completed in other webpages.
+- [**Whack an Engineer**](https://github.com/nbiancolin/whack-an-engineer)
+  An engineer themed 'Whack a Mole' game built using only Verilog, to be run on a DE1-SOC FPGA board.
+
 - **More in the works, stay tuned**
 
 ## Skills
-- Programming Languages: C/C++, Python, Java, Verilog, MATLAB, 
+- Programming Languages: C/C++, Python, Verilog, PHP/Javascript, Java, MATLAB, mySQL
 - Tools: JetBrains Suite (Clion, Intellij), Visual Studio/VScode, Microsoft Office Suite, Adobe Creative Cloud (Photoshop, Premiere Pro, After Effects, InDesign)
 - Technical Skills: Soldering, Building circuits
+- Hardware: Building and Configuring PCs and Servers, soldering, designing circuits
 
 ## Contact
 Feel free to reach out to me via email at [nicholasbiancolin[at]gmail.com](mailto:nicholasbiancolin@gmail.com)
