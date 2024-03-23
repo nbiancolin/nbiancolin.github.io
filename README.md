@@ -10,7 +10,7 @@ Hi! I'm Nicholas Biancolin, studying Computer Engineering at the University of T
   Built a polar coordinates sketching function that draws a percentage of a certain graph (as described by a cookie stored in the user's browser). This cookie is updated when tasks are completed in other webpages.
 - [**Whack an Engineer**](https://github.com/nbiancolin/whack-an-engineer)
   An engineer themed 'Whack a Mole' game built using only Verilog, to be run on a DE1-SOC FPGA board.
-  - [**Wiki Updater**](https://github.com/nbiancolin/wiki-updater)
+- [**Wiki Updater**](https://github.com/nbiancolin/wiki-updater)
   Wrote a collection of python scripts to update our team's DokuWiki (progress tracking WIKI for the course ECE297).
   Also wrote a [**custom API**](https://github.com/nbiancolin/dokuwiki-https) to interface with the wiki **over HTTPS**, thereby not being succeptible to the security risks from XML-RPC.
 
