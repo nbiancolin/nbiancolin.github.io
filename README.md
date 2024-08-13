@@ -1,7 +1,9 @@
 # Nicholas Biancolin
 
 ## About Me
-Hi! I'm Nicholas Biancolin, an incoming Third Year Computer Engineering student at the University of Toronto. I am a motivated self starter, who is able to function independently and in teams to accomplish tasks on time and to high quality. I am dependable and will try my best to do an excellent job.  I hope to gain skills and work experience while making a positive impac
+Hi! I'm Nicholas Biancolin, an incoming Third Year Computer Engineering student at the University of Toronto. I am a motivated self starter, who is able to function independently and in teams to accomplish tasks on time and to high quality. I am dependable and will try my best to do an excellent job.  I hope to gain skills and work experience while making a positive impact
+
+> Alongside computer-related things, I am also a musician! Find out more about that at the [music section](./music/) of my website.
 
 ## Projects
 - [**Wiki Updater**](https://github.com/nbiancolin/wiki-updater)
