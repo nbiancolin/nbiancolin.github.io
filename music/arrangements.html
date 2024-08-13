@@ -1,9 +1,153 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Website</title>
+    <title>Arrangements - Nicholas Biancolin</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .services {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .service {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .service:hover {
+            background-color: #f5f5f5;
+        }
+
+        .contact {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .testimonials {
+            margin-top: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <h1>Nicholas Biancolin</h1>
+        <p>Jazz Pianist, Composer, Arranger</p>
+    </header>
+
+    <section>
+        <h2>Welcome to Our Music Preparation Service!</h2>
+        <p>At our music preparation service, we are dedicated to providing top-notch music preparation services for composers, arrangers, and musicians. Whether you need sheet music engraving, orchestration, or other music-related services, we've got you covered.</p>
+    </section>
+
+    <section class="services">
+        <div class="service" onclick="showServiceDetails('engraving')">
+            <h3>Sheet Music Engraving</h3>
+            <p>Our team of experienced engravers will turn your compositions into beautifully notated sheet music.</p>
+        </div>
+        <div class="service" onclick="showServiceDetails('orchestration')">
+            <h3>Orchestration</h3>
+            <p>Need help arranging your music for different instruments or ensembles? Our skilled orchestrators can bring your musical ideas to life.</p>
+        </div>
+        <div class="service" onclick="showServiceDetails('transcription')">
+            <h3>Music Transcription</h3>
+            <p>Have a recording that you want transcribed into sheet music? We can transcribe music from audio files, videos, or any other format.</p>
+        </div>
+    </section>
+
+    <section id="serviceDetails" style="display: none;">
+        <h2 id="serviceName"></h2>
+        <p id="serviceDescription"></p>
+    </section>
+
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <p>Ready to enhance your music with our professional music preparation services? <a href="mailto:your.email@example.com">Contact us today!</a></p>
+    </section>
+
+    <section class="testimonials">
+        <h2>Testimonials</h2>
+        <blockquote>
+            <p>"Working with the music preparation service was a fantastic experience. They exceeded my expectations in every aspect, delivering high-quality results within the specified timeframe." - Composer123</p>
+        </blockquote>
+        <blockquote>
+            <p>"I appreciate the attention to detail and the dedication of the team. They truly care about the music they work on, and it shows in the final product." - Musician456</p>
+        </blockquote>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Your Music Preparation Service. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showServiceDetails(service) {
+            const serviceDetails = document.getElementById('serviceDetails');
+            const serviceNameElement = document.getElementById('serviceName');
+            const serviceDescriptionElement = document.getElementById('serviceDescription');
+
+            switch (service) {
+                case 'engraving':
+                    serviceNameElement.innerText = 'Sheet Music Engraving';
+                    serviceDescriptionElement.innerText = 'Our team of experienced engravers will turn your compositions into beautifully notated sheet music.';
+                    break;
+                case 'orchestration':
+                    serviceNameElement.innerText = 'Orchestration';
+                    serviceDescriptionElement.innerText = 'Need help arranging your music for different instruments or ensembles? Our skilled orchestrators can bring your musical ideas to life.';
+                    break;
+                case 'transcription':
+                    serviceNameElement.innerText = 'Music Transcription';
+                    serviceDescriptionElement.innerText = 'Have a recording that you want transcribed into sheet music? We can transcribe music from audio files, videos, or any other format.';
+                    break;
+                default:
+                    break;
+            }
+
+            serviceDetails.style.display = 'block';
+        }
+    </script>
+<section>
     <h1>Content Descriptions</h1>
 
     <div>
@@ -20,7 +164,7 @@
         </audio>
         <textarea placeholder="Enter description here"></textarea>
     </div>
-
+</section>
     <!-- Add more content sections as needed -->
 
 </body>
