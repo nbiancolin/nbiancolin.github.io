@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Arrangements - Nicholas Biancolin</title>
+    <link rel="stylesheet" href="./styles/style.css"> 
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -40,6 +41,12 @@
             justify-content: space-around;
             margin-top: 20px;
         }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
 
         .service {
             text-align: center;
@@ -73,19 +80,24 @@
 </head>
 <body>
     <header>
-        <h1>Nicholas Biancolin</h1>
+        <a href="./index.html" class="headerLink"><h1>Nicholas Biancolin</h1> </a>
         <p>Jazz Pianist, Composer, Arranger</p>
+        <p> &nbsp;<a href="./index.html" class="headerLink">Home</a>,&nbsp; <a href="./performance.html" class="headerLink">Performance</a>,&nbsp; <a href="arrangements.html" class="headerLink">Arranging</a> &nbsp;</p>
     </header>
 
     <section>
-        <h2>Welcome to Our Music Preparation Service!</h2>
-        <p>At our music preparation service, we are dedicated to providing top-notch music preparation services for composers, arrangers, and musicians. Whether you need sheet music engraving, orchestration, or other music-related services, we've got you covered.</p>
+        <h2>Arranging & Composing</h2>
+        <p>I have been writing music for over 6 years, and in that time I have developed my skills and gained valuable experience. Below you'll find some of my arrangements I am most proud of.</p>
     </section>
 
-    <section class="services">
-        <div class="service" onclick="showServiceDetails('engraving')">
-            <h3>Sheet Music Engraving</h3>
-            <p>Our team of experienced engravers will turn your compositions into beautifully notated sheet music.</p>
+    <section>
+        <h1>Arrangements List</h1>
+        <p> Below are some of the arrangements & compositions I have recently done that I am post proud of. 
+            Click on any one, and it will load the sample audio and PDF of the score</p>
+            <div class="services">
+        <div class="service" onclick="showServiceDetails('iwishyoulove')">
+            <h3>I Wish You Love</h3>
+            <p>Vocalist accompanied by full Jazz Ensemble + Strings in this sikly smooth medium-bossa.</p>
         </div>
         <div class="service" onclick="showServiceDetails('orchestration')">
             <h3>Orchestration</h3>
@@ -95,19 +107,28 @@
             <h3>Music Transcription</h3>
             <p>Have a recording that you want transcribed into sheet music? We can transcribe music from audio files, videos, or any other format.</p>
         </div>
+        <div class="service" onclick="showServiceDetails('transcription')">
+            <h3>Music Transcription</h3>
+            <p>Have a recording that you want transcribed into sheet music? We can transcribe music from audio files, videos, or any other format.</p>
+        </div></div>
     </section>
 
     <section id="serviceDetails" style="display: none;">
-        <h2 id="serviceName"></h2>
+        <h2 id="pieceTitle"></h2>
+        <audio controls id="audioControls">
+            <source id="audioPlayer" src="dummyPath" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <embed id="pdfViewer" width=100% height=800px src="dummyPath" type="application/pdf">
         <p id="serviceDescription"></p>
     </section>
 
-    <section class="contact">
+    <!-- <section class="contact">
         <h2>Contact Us</h2>
         <p>Ready to enhance your music with our professional music preparation services? <a href="mailto:your.email@example.com">Contact us today!</a></p>
-    </section>
+    </section> -->
 
-    <section class="testimonials">
+    <!-- <section class="testimonials">
         <h2>Testimonials</h2>
         <blockquote>
             <p>"Working with the music preparation service was a fantastic experience. They exceeded my expectations in every aspect, delivering high-quality results within the specified timeframe." - Composer123</p>
@@ -115,22 +136,29 @@
         <blockquote>
             <p>"I appreciate the attention to detail and the dedication of the team. They truly care about the music they work on, and it shows in the final product." - Musician456</p>
         </blockquote>
-    </section>
+    </section> -->
 
     <footer>
-        <p>&copy; 2023 Your Music Preparation Service. All rights reserved.</p>
+        <p>&copy; 2024 Nicholas Biancolin. All rights reserved.</p>
     </footer>
 
     <script>
         function showServiceDetails(service) {
             const serviceDetails = document.getElementById('serviceDetails');
-            const serviceNameElement = document.getElementById('serviceName');
+            const audioPlayer = document.getElementById('audioPlayer');
+            const pdfViewer = document.getElementById('pdfViewer');
             const serviceDescriptionElement = document.getElementById('serviceDescription');
+            const audioControls = document.getElementById('audioControls');
+            const header = document.getElementById('pieceTitle');
 
             switch (service) {
-                case 'engraving':
-                    serviceNameElement.innerText = 'Sheet Music Engraving';
-                    serviceDescriptionElement.innerText = 'Our team of experienced engravers will turn your compositions into beautifully notated sheet music.';
+                case 'iwishyoulove':
+                    pdfViewer.setAttribute("src", "./assets/6_I Wish you Love - ms4.pdf"); //set pdf src
+                    audioPlayer.src = "./assets/I Wish You Love - Full - August 13.mp3"; //set audio source
+                    header.innerText = 'I Wish You Love';
+                    serviceDescriptionElement.innerText = 'Vocalist accompanied by full Jazz Ensemble + Strings in this sikly smooth medium-bossa. (Rhythm Section recorded by Nicholas Biancolin (p), Ben Smieja (b), Zach Dawood (d)';
+                    audioControls.load();
+                    audioControls.play();
                     break;
                 case 'orchestration':
                     serviceNameElement.innerText = 'Orchestration';
@@ -147,25 +175,6 @@
             serviceDetails.style.display = 'block';
         }
     </script>
-<section>
-    <h1>Content Descriptions</h1>
-
-    <div>
-        <h2>PDF Viewer</h2>
-        <embed src="path/to/your.pdf" width="500" height="600" type="application/pdf">
-        <textarea placeholder="Enter description here"></textarea>
-    </div>
-
-    <div>
-        <h2>Audio Player</h2>
-        <audio controls>
-            <source src="path/to/your.audio" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
-        <textarea placeholder="Enter description here"></textarea>
-    </div>
-</section>
-    <!-- Add more content sections as needed -->
 
 </body>
 </html>

@@ -1,5 +1,9 @@
 * {box-sizing:border-box}
 
+.headerLink:visited, headerLink:link, headerLink:active, headerLink:hover, headerLink:focus, headerLink:visited {
+  color: white;
+}
+
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;

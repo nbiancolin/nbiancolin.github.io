@@ -33,15 +33,16 @@ function showSlides() {
   if (slideIndex > slides.length) {slideIndex = 1}
   if (slideIndex < 1) {slideIndex = slides.length}
   slides[slideIndex-1].style.display = "block";
-  timeoutId = setTimeout(showSlides, 6000); // Change image every 2 seconds
+  timeoutId = setTimeout(showSlides, 7000); // Change image every 2 seconds
 } 
      </script>
 </head>
 <body>
 
     <header>
-        <h1>Nicholas Biancolin</h1>
+        <a href="./index.html" class="headerLink"><h1>Nicholas Biancolin</h1> </a>
         <p>Jazz Pianist, Composer, Arranger</p>
+        <p> &nbsp;<a href="./index.html" class="headerLink">Home</a>,&nbsp; <a href="./performance.html" class="headerLink">Performance</a>,&nbsp; <a href="arrangements.html" class="headerLink">Arranging</a> &nbsp;</p>
     </header>
 
     <section>
@@ -51,6 +52,7 @@ function showSlides() {
             It's nice to meet you!
         </p>
         <!-- <p class="quote">"Jazz is not just music, it's a way of life."</p> -->
+         <p class="quote">In addition to being a musician, I'm also a Computer Engineering student! Check out some of my tech projects <a href="../">here.</a></p>
     </section>
 
     <section class="slideshow">
@@ -150,14 +152,12 @@ function showSlides() {
         <h2>Follow Me</h2>
         <div class="social-icons">
             <a href="https://www.instagram.com/nnote_music" target="_blank">Instagram</a>
-            <a href="https://www.twitter.com/yourname" target="_blank">Musescore</a>
-            <a href="https://www.instagram.com/nnote_music" target="_blank">Instagram</a>
-            <!-- Add more social icons as needed -->
+            <a href="https://musescore.com/thennote" target="_blank">Musescore</a>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Nicholas Biancoli. All rights reserved.</p>
+        <p>&copy; 2024 Nicholas Biancolin. All rights reserved.</p>
     </footer>
     <script>
 showSlides();
