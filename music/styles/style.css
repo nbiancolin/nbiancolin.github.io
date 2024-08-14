@@ -1,6 +1,6 @@
 * {box-sizing:border-box}
 
-.headerLink:visited, headerLink:link, headerLink:active, headerLink:hover, headerLink:focus, headerLink:visited {
+.headerLink:visited, headerLink:link, headerLink:active, headerLink:hover, headerLink:focus {
   color: white;
 }
 
