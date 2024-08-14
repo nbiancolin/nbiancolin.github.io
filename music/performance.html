@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicholas Biancolin - Jazz Pianist</title>
+    <link rel="stylesheet" href="./styles/style.css"> 
+    <!-- <script src="./scripts/slideshow.js"></script> -->
+     <script>
+let slideIndex = 0;
+let timeoutId = null;
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides() {
+    if (timeoutId) {
+        clearTimeout(timeoutId);
+    }
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  if (slideIndex < 1) {slideIndex = slides.length}
+  slides[slideIndex-1].style.display = "block";
+  timeoutId = setTimeout(showSlides, 7000); // Change image every 2 seconds
+} 
+     </script>
+</head>
+<body>
+
+    <header>
+        <a href="./index.html" class="headerLink"><h1>Nicholas Biancolin</h1> </a>
+        <p>Jazz Pianist, Composer, Arranger</p>
+        <p> &nbsp;<a href="./index.html" class="headerLink">Home</a>,&nbsp; <a href="./performance.html" class="headerLink">Performance</a>,&nbsp; <a href="arrangements.html" class="headerLink">Arranging</a> &nbsp;</p>
+    </header>
+
+    <!-- <section>
+        <h2>About Me</h2>
+        <p>
+            Hi! I'm Nicholas Biancolin, a jazz pianist, composer, and arranger based in Toronto, Canada.
+            It's nice to meet you!
+        </p> -->
+        <!-- <p class="quote">"Jazz is not just music, it's a way of life."</p> -->
+         <!-- <p class="quote">In addition to being a musician, I'm also a Computer Engineering student! Check out some of my tech projects <a href="../">here.</a></p>
+    </section> -->
+
+    <section class="slideshow">
+        <!-- Slideshow container -->
+         <h2>Gallery</h2>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 8</div>
+                <img src="./img/piano-3.jpg" style="width:100%">
+                <div class="text caption">Playing Piano & Synth with "Skule Combo" at UofT Engineering's "GradBall", 2024</div>
+            </div>
+        
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 8</div>
+                <img src="./img/piano-2.jpg" style="width:100%">
+                <div class="text caption">Playing Piano & Synth with the "Covalent Quintet" at UofT Chemical Engineering's "Dinner Dance", 2023</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 8</div>
+                <img src="./img/piano-6.jpg" style="width:100%">
+                <div class="text caption">Accompanying Prof. Michael Guerzhoy (not pictured) at UofT Engineering Science's "Nocturne", 2024</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 8</div>
+                <img src="./img/piano-1.jpg" style="width:100%">
+                <div class="text">Playing piano with "Skule Combo" at UofT Engineering's "GradBall", 2024</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 8</div>
+                <img src="./img/piano-4.png" style="width:100%">
+                <div class="text caption">Playing Keys 1 (Piano) with the Skule Nite Pit Orchestra, 2024</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 8</div>
+                <img src="./img/piano-5.jpg" style="width:100%">
+                <div class="text caption">Playing piano with "Skule Combo" at UofT Engineering's "Godiva Wake", 2024</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">7 / 8</div>
+                <img src="./img/piano-7.jpg" style="width:100%">
+                <div class="text caption">Playing piano with Joaquin Arcilla (T. Sax) & Liam Ernst-Selway (Bass) at Uoft Engineering Science's "Nocturne", 2023</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">8 / 8</div>
+                <img src="./img/piano-8.png" style="width:100%">
+                <div class="text caption">Playing piano with Skule Stageband at  Uoft Engineering's "Suds", 2023</div>
+            </div>
+        
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-2)">&#10094;</a>
+            <a class="next" onclick="plusSlides(0)">&#10095;</a>
+        </div>
+        <br>
+        
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+        </div> 
+    </section>
+
+    <section>
+        <h2>Performance</h2>
+        <p>
+            I love playing music with others. Whether we are playing one of my arrangements, or jamming to something we found in the real book, Its always a good time. You can read more about some of my musical endeavors below:
+        </p>
+    </section>
+
+    <section>
+        <h3> Skule Stageband</h3>
+        <p> 
+            This year, I will be the conductor and director of UofT Engineering's "<a href="https://jazz.skule.ca"> Skule Stageband",</a> a 20-piece big band that performs at various UofT Engineering events throughout the year.
+            In previous years, I was the pianist for the ensemble, performing many genres of big band music: Jazz, Latin, Funk, etc. </p>
+          <p>
+              In addition to directing, I also arrange and compose music for this ensemble! For more info about that, check out the <a href="./arrangements.html">"Arrangements" section</a> of this website.
+        </p>
+        <h3>Skule Combo</h3>
+        <p>
+            I am also the pianist of "Skule Combo", a small jazz ensemble that performs for weddings, corporate events, and other special occasions. 
+            While we mainly play jazz music, we occasionally play pop and funk music by request.
+        </p>
+        <h3>Skule Nite</h3>
+        <p> 
+            I am the lead pianist (keys 1) for the Skule Nite Pit Orchestra, a 20-piece orchestra that performs for UofT Engineering's annual musical sketch comedy revue, "Skule Nite".
+            I also arrange music for the show! In previous years I have contributed Intermission music, as well as scoring for the show.
+            For more information about Skule Nite, check out their website <a href="https://skulenite.skule.ca/">here</a>.
+        </p>
+    </section>
+
+    <section>
+        <h2>Follow Me</h2>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/nnote_music" target="_blank">Instagram</a>
+            <a href="https://musescore.com/thennote" target="_blank">Musescore</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Nicholas Biancolin. All rights reserved.</p>
+    </footer>
+    <script>
+showSlides();
+    </script>
+
+</body>
+</html>
