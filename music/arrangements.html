@@ -99,18 +99,26 @@
             <h3>I Wish You Love</h3>
             <p>Vocalist accompanied by full Jazz Ensemble + Strings in this sikly smooth medium-bossa.</p>
         </div>
-        <div class="service" onclick="showServiceDetails('orchestration')">
-            <h3>Orchestration</h3>
-            <p>Need help arranging your music for different instruments or ensembles? Our skilled orchestrators can bring your musical ideas to life.</p>
+        <div class="service" onclick="showServiceDetails('justfriends')">
+            <h3>Just Friends</h3>
+            <p>My take on the jazz standard "Just Friends" if it were arranged/orchestrated for the movie "La La Land". Vocalist accompanied by full Jazz Ensemble + Strings</p>
         </div>
-        <div class="service" onclick="showServiceDetails('transcription')">
-            <h3>Music Transcription</h3>
-            <p>Have a recording that you want transcribed into sheet music? We can transcribe music from audio files, videos, or any other format.</p>
+        <div class="service" onclick="showServiceDetails('bandstings')">
+            <h3>Band Stings (Skule Nite 2t4)</h3>
+            <p>(for Skule Nite 2t4) "Sitcom Cutaway Music" to be played by the pit orchestra during the show</p>
         </div>
-        <div class="service" onclick="showServiceDetails('transcription')">
-            <h3>Music Transcription</h3>
-            <p>Have a recording that you want transcribed into sheet music? We can transcribe music from audio files, videos, or any other format.</p>
-        </div></div>
+        <div class="service" onclick="showServiceDetails('dance')">
+            <h3>Dance</h3>
+            <p>This one pulls out all the stops! I put pretty much everything I know about latin music into this chart. Vocalist accompanied 6pc horns + Rhythm.</p>
+        </div>
+        <div class="service" onclick="showServiceDetails('goodtime')">
+            <h3>Good Time</h3>
+            <p>Arranged & Orchestrated for Jake Dahms' musical "CornDog" Duet vocalists accompanied by 4 horns, 2 strings, 3 keys and rhythm</p>
+        </div>
+    
+    
+    
+    </div>
     </section>
 
     <section id="serviceDetails" style="display: none;">
@@ -156,13 +164,41 @@
                     pdfViewer.setAttribute("src", "./assets/6_I Wish you Love - ms4.pdf"); //set pdf src
                     audioPlayer.src = "./assets/I Wish You Love - Full - August 13.mp3"; //set audio source
                     header.innerText = 'I Wish You Love';
-                    serviceDescriptionElement.innerText = 'Vocalist accompanied by full Jazz Ensemble + Strings in this sikly smooth medium-bossa. (Rhythm Section recorded by Nicholas Biancolin (p), Ben Smieja (b), Zach Dawood (d)';
+                    serviceDescriptionElement.innerText = 'Vocalist accompanied by full Jazz Ensemble + Strings in this sikly smooth medium-bossa. Woodwind Doubles: Alto 1/Clar, Alto 2/Flute, Tenor 1/Clar, Tenor 2/Flute (Rhythm Section recorded by Nicholas Biancolin (p), Ben Smieja (b), Zach Dawood (d)';
                     audioControls.load();
                     audioControls.play();
                     break;
-                case 'orchestration':
-                    serviceNameElement.innerText = 'Orchestration';
-                    serviceDescriptionElement.innerText = 'Need help arranging your music for different instruments or ensembles? Our skilled orchestrators can bring your musical ideas to life.';
+                case 'justfriends':
+                    pdfViewer.setAttribute("src", "./assets/RECORDING-New Just Friends.pdf"); //set pdf src
+                    audioPlayer.src = "./assets/RECORDING-New Just Friends.mp3"; //set audio source
+                    header.innerText = 'Just Friends';
+                    serviceDescriptionElement.innerText = 'My take on the jazz standard "Just Friends" if it were arranged/orchestrated for the movie "La La Land". Vocalist accompanied by full Jazz Ensemble + Strings. Woodwind doubles: Altos/Flutes, Tenors/Clarinet, Bari/Bs. Clar';
+                    audioControls.load();
+                    audioControls.play();
+                    break;
+                case 'bandstings':
+                    pdfViewer.setAttribute("src", "./assets/Band Stings V2.4.pdf"); //set pdf src
+                    audioPlayer.src = "./assets/Band Stings V2.4.mp3"; //set audio source
+                    header.innerText = 'Band Stings (Sitcom-esque Cutaway Music)';
+                    serviceDescriptionElement.innerText = 'I composed/arranged this music for Skule Nite 2t4, to be played by the pit orchestra. While some stings are short, the \"Romantic Stings\" near the end are a bit longer and my personal favourites.';
+                    audioControls.load();
+                    audioControls.play();
+                    break;
+                case 'dance':
+                    pdfViewer.setAttribute("src", "./assets/1_Dance.pdf"); //set pdf src
+                    audioPlayer.src = "./assets/1_Dance.mp3"; //set audio source
+                    header.innerText = 'Dance';
+                    serviceDescriptionElement.innerText = 'This one pulls out all the stops! Starts with straight latin, then moves to a Brazillian Samba, then finishes out with a high-energy Mambo! Starts in A Major, modulation to A Minor. Vocalist accompanied 6pc horns + Rhythm.';
+                    audioControls.load();
+                    audioControls.play();
+                    break;
+                case 'goodtime':
+                pdfViewer.setAttribute("src", "./assets/That_Sounds_Like_A_Good_Time_To_Me - NB Orchestration.pdf"); //set pdf src
+                    audioPlayer.src = "./assets/That_Sounds_Like_A_Good_Time_To_Me - NB Orchestration.mp3"; //set audio source
+                    header.innerText = 'Good Time';
+                    serviceDescriptionElement.innerText = 'This was arranged/orchestrated for my friend Jake Dahms\' musical \"CornDog\". This was actually the first arrangement I ever wrote for someone else, and I\'m impressed by how well it holds up with my other work';
+                    audioControls.load();
+                    audioControls.play();
                     break;
                 case 'transcription':
                     serviceNameElement.innerText = 'Music Transcription';
